@@ -30,12 +30,12 @@
             <p>¡Buena suerte!</p>
         </div>
         <div>
-            <form method="post" action="#">
+            <form method="post" action="evaluarExamen.php">
             <?php
                 //Arreglos para almacenar las preguntas y respuestas
                 $preguntaYRespuestasArray = array();
                 // Abre el archivo de texto para lectura
-                $archivo = fopen('data/preguntas.txt', 'r');
+                $archivo = fopen('../data/preguntas.txt', 'r');
                 $arrayAuxiliar = array();
                 $cont = 0;
                 if ($archivo) {
