@@ -1,0 +1,60 @@
+¿Qué es la sobrecarga de métodos en Programación Orientada a Objetos?
+*Permite definir múltiples métodos con el mismo nombre en una clase, pero con diferentes parámetros.
+Permite ejecutar múltiples métodos al mismo tiempo.
+Se refiere a la redefinición de métodos en una subclase.
+No es posible en la Programación Orientada a Objetos.
+
+¿Cuál es el planeta más cercano al sol en nuestro sistema solar?
+Júpiter
+Marte
+Venus (Respuesta correcta)
+Urano
+
+¿Cuál es el río más largo del mundo?
+Nilo (Respuesta correcta)
+Amazonas
+Misisipi
+Danubio
+
+¿Quién escribió "Don Quijote de la Mancha"?
+Gabriel García Márquez
+Miguel de Cervantes (Respuesta correcta)
+William Shakespeare
+Fyodor Dostoevsky
+
+¿Cuál es el símbolo químico del oro?
+Ag
+Au (Respuesta correcta)
+Fe
+Cu
+
+¿En qué año se firmó la Declaración de Independencia de los Estados Unidos?
+1776 (Respuesta correcta)
+1492
+1865
+1918
+
+¿Cuál es el planeta más grande del sistema solar?
+Venus
+Mercurio
+Júpiter (Respuesta correcta)
+Saturno
+
+¿Cuál es el océano más grande del mundo?
+Atlántico
+Pacífico (Respuesta correcta)
+Índico
+Ártico
+
+¿Quién pintó la Mona Lisa?
+Pablo Picasso
+Leonardo da Vinci (Respuesta correcta)
+Vincent van Gogh
+Rembrandt
+
+¿Cuál es la capital de Japón?
+Beijing
+Tokio (Respuesta correcta)
+Seúl
+Bangkok
+
