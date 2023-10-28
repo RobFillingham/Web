@@ -1,16 +1,18 @@
 
-*{
+header{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: bisque;
+    background: #e36124;
+    
+    color: snow;
 }
 
 li, a, button{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: black;
+    color: snow;
     text-decoration: none;
 }
 header{
@@ -33,7 +35,7 @@ header{
     transition: all 0.3s ease 0s;
 }
 .nav_links li a:hover{
-    color: aqua;
+    color: rgb(58, 46, 163);
 }
 button{
     padding: 9px 25px;
@@ -45,4 +47,24 @@ button{
 }
 button:hover{
     background-color: rgba(0,136,169,0.8);
+}
+.custom-button {
+    background-color: #FF5733; /* Cambia esto al color que desees */
+    border-color: #FF5733; /* Cambia el color del borde si es necesario */
+    color: #fff; /* Cambia el color del texto si es necesario */
+}
+.custom-button:hover {
+    background-color: #FF5733; /* Cambia esto al color que desees */
+    border-color: #FF5733; /* Cambia el color del borde si es necesario */
+    color: #fff; /* Cambia el color del texto si es necesario */
+}
+.custom-button:active {
+    background-color: #FF5733; /* Cambia esto al color que desees */
+    border-color: #FF5733; /* Cambia el color del borde si es necesario */
+    color: #fff; /* Cambia el color del texto si es necesario */
+}
+.custom-button:focus {
+    background-color: #FF5733; /* Cambia esto al color que desees */
+    border-color: #FF5733; /* Cambia el color del borde si es necesario */
+    color: #fff; /* Cambia el color del texto si es necesario */
 }

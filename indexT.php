@@ -3,14 +3,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 
-
-<ul class="nav navbar-nav flex-row justify-content-between ml-auto">
-    <li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i class="fa fa-cog fa-fw fa-lg"></i></a></li>
-    <li class="dropdown order-1">
-        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Login <span class="caret"></span></button>
+<header>
+        <img class="logo" src="MEDIA/logoCompleto.png" alt="logo" height="200px">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Vacantes</a></li>
+                <li><a href="#">log</a></li>
+            </ul>
+        </nav>
+        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="custom-button btn dropdown-toggle">Login <span class="caret"></span></button>
         <ul class="dropdown-menu dropdown-menu-right mt-2">
             <li class="px-3 py-2">
                 <form class="form" role="form" action="php/login.php" method="post">
@@ -30,9 +36,8 @@
                 </form>
             </li>
         </ul>
-    </li>
-</ul>
 
+</header>
 <div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
