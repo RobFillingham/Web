@@ -50,7 +50,7 @@
     fclose($file2);
 
     unlink("../data/archivo.txt");
-    rename("../data/archivo2.txt","archivo.txt");
+    rename("../data/archivo2.txt","../data/archivo.txt");
 
     if($calificacion>=7){
         //MENSAJE DE EXITO
