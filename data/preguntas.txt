@@ -1,0 +1,66 @@
+¿Qué es la sobrecarga de métodos en Programación Orientada a Objetos?
+*Permite definir múltiples métodos con el mismo nombre en una clase, pero con diferentes parámetros.
+Permite ejecutar múltiples métodos al mismo tiempo.
+Se refiere a la redefinición de métodos en una subclase.
+No es posible en la Programación Orientada a Objetos.
+
+¿Cuál es el propósito de una API (Interfaz de Programación de Aplicaciones)?
+Formatear datos para una legibilidad humana
+Interactuar con una base de datos
+*Definir cómo deben comunicarse los componentes de software
+Optimizar la ejecución de código
+
+¿Cuál estructura de datos es la más adecuada para implementar un comportamiento LIFO (Last-In-First-Out)?
+Cola
+Lista Enlazada
+*Pila
+Árbol
+
+¿Cuál es la complejidad temporal de un algoritmo de búsqueda binaria para encontrar un elemento en un arreglo ordenado de tamaño 'n'?
+O(1)
+*O(log n)
+O(n)
+O(n^2)
+
+En la programación orientada a objetos, ¿qué es la encapsulación?
+*La capacidad de ocultar la complejidad de una clase
+Una forma de crear objetos a partir de clases
+Almacenar datos en una lista
+Definir variables públicas en una clase
+
+¿Qué significa el código de estado HTTP '404'?
+No autorizado
+Error interno del servidor
+*No encontrado
+OK
+
+¿Cuál de los siguientes no es un lenguaje de programación válido?
+Python
+Java
+*HTML
+C++
+
+¿Cuál es la función principal de un compilador en el contexto de los lenguajes de programación?
+Ejecutar código línea por línea
+*Traducir código de alto nivel a código máquina
+Proporcionar un entorno de desarrollo integrado (IDE)
+Crear interfaces de usuario
+
+¿Para qué se utiliza una cláusula JOIN en SQL?
+Ordenar los resultados de una consulta
+Filtrar filas según una condición
+*Combinar filas de dos o más tablas
+Realizar cálculos en los datos
+
+¿Qué algoritmo de ordenación tiene una complejidad temporal en el peor caso de O(n^2)?
+Ordenación por Mezcla
+Ordenación Rápida
+*Ordenación de Burbuja
+Ordenación por Inserción
+
+En una red TCP/IP, ¿qué capa es responsable de enrutamiento de datos entre diferentes redes?
+Capa Física
+Capa de Enlace de Datos
+*Capa de Red
+Capa de Transporte
+
