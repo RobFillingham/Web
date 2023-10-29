@@ -93,38 +93,38 @@
         
         //MODIFICAR EL REGISTRO DEL USUARIO A QUE YA MANDO LA FORMA
         
-        $file = fopen("../../data/archivo.txt","r");
-        $file2 = fopen("../../data/archivo2.txt","a+");
+        // $file = fopen("../../data/archivo.txt","r");
+        // $file2 = fopen("../../data/archivo2.txt","a+");
 
-        while (!feof($file)) {
-            $linea = fgets($file);
-            if ($linea != "") {
-                $aux = preg_split("/[\s,]+/", $linea);   //https://www.w3schools.com/php/func_regex_preg_split.asp
-                                               // https://www.w3schools.com/php/php_ref_regex.asp
-                $correo = $aux[0];
-                $contrasena = $aux[1];
-                $form= $aux[2];
-                $examen= $aux[3];
-                $codigoE = $aux[4];
-                $nombre = $aux[5];
+        // while (!feof($file)) {
+        //     $linea = fgets($file);
+        //     if ($linea != "") {
+        //         $aux = preg_split("/[\s,]+/", $linea);   //https://www.w3schools.com/php/func_regex_preg_split.asp
+        //                                        // https://www.w3schools.com/php/php_ref_regex.asp
+        //         $correo = $aux[0];
+        //         $contrasena = $aux[1];
+        //         $form= $aux[2];
+        //         $examen= $aux[3];
+        //         $codigoE = $aux[4];
+        //         $nombre = $aux[5];
 
-                if ($correo === $_SESSION["correo"]) {
-                    $linea = $correo." ".$contrasena." 1 ".$examen." ".$codigoE." ".$nombre."\n";
-                    $_SESSION["form"] = 1;
-                    fwrite($file2, $linea);
-                    break;
-                }
-                else{
-                    fwrite($file2, $linea);
-                }
-            }
-        } 
+        //         if ($correo === $_SESSION["correo"]) {
+        //             $linea = $correo." ".$contrasena." 1 ".$examen." ".$codigoE." ".$nombre."\n";
+        //             $_SESSION["form"] = 1;
+        //             fwrite($file2, $linea);
+        //             break;
+        //         }
+        //         else{
+        //             fwrite($file2, $linea);
+        //         }
+        //     }
+        // } 
 
-        fclose($file);
-        fclose($file2);
+        // fclose($file);
+        // fclose($file2);
 
-        unlink("../../data/archivo.txt");
-        rename("../../data/archivo2.txt","../../data/archivo.txt");
+        // unlink("../../data/archivo.txt");
+        // rename("../../data/archivo2.txt","../../data/archivo.txt");
         
     }
 
@@ -159,10 +159,13 @@ clave:";
         $pdf->Output('Solicitud.pdf', 'D');
     }else{
 ?>
+<head> 
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
 <body>
-    <h2>Formulario</h2>
     <form method="post" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-
+        <legend>Datos personales</legend>
         <label for="name">Nombre: </label>
         <input type="text" id="name" name="name" required>
         
@@ -175,66 +178,74 @@ clave:";
         <label for="cel_number">Número de teléfono:</label>
         <input type="number" id="cel_number" name="cel_number" required>
 
-        <label for="user_image">Fotografía:</label>
-        <input type="file" id="user_image" name="user_image"  required>
+        <div class="file">
+            <label>Fotografía del aspirante:</label>
+            <input type="file" id="user_image" name="user_image"   required>
+            <label for="user_image" class="fileButton">Subir fotografía</label>
+        </div>
+            
+        <label>Fecha de nacimiento:</label>
+        <div class="birthday">
+            <label for="birthday_day" aria-placeholder="Día"></label>
+            <select id="birthday_day" name="birthday_day" required>
+                <!-- Generar opciones para los días (1-31) -->
+                <?php
+                for ($day = 1; $day <= 31; $day++) {
+                    echo "<option value='$day'>$day</option>";
+                }
+                ?>
+            </select>
+            
+            <label for="birthday_month"aria-placeholder="Mes"></label>
+            <select id="birthday_month" name="birthday_month" required>
+                <!-- Generar opciones para los meses (1-12) -->
+                <?php
+                $textMonth= "";
+                for ($month = 1; $month <= 12; $month++) {
+                    $textMonth= $months[$month];
+                    echo "<option value='$textMonth'>$textMonth</option>";
+                }
+                ?>
+            </select>
 
-        <label>Día de nacimiento:</label>
-        <label for="birthday_day" aria-placeholder="Día"></label>
-        <select id="birthday_day" name="birthday_day" required>
-            <!-- Generar opciones para los días (1-31) -->
-            <?php
-            for ($day = 1; $day <= 31; $day++) {
-                echo "<option value='$day'>$day</option>";
-            }
-            ?>
-        </select>
+            <label for="birthday_year"aria-placeholder="Año"></label>
+            <select id="birthday_year" name="birthday_year" required>
+                <!-- Generar opciones para los años (1970-2023) -->
+                <?php
+                for ($year = 1970; $year <= 2023; $year++) {
+                    echo "<option value='$year'>$year</option>";
+                }
+                ?>
+            </select>
+        </div>
         
-        <label for="birthday_month"aria-placeholder="Mes">Mes</label>
-        <select id="birthday_month" name="birthday_month" required>
-            <!-- Generar opciones para los meses (1-12) -->
-            <?php
-            $textMonth= "";
-            for ($month = 1; $month <= 12; $month++) {
-                $textMonth= $months[$month];
-                echo "<option value='$textMonth'>$textMonth</option>";
-            }
-            ?>
-        </select>
-
-        <label for="birthday_year"aria-placeholder="Año">Año</label>
-        <select id="birthday_year" name="birthday_year" required>
-            <!-- Generar opciones para los años (1970-2023) -->
-            <?php
-            for ($year = 1970; $year <= 2023; $year++) {
-                echo "<option value='$year'>$year</option>";
-            }
-            ?>
-        </select>
-
-        <label>Que lenguajes o framworks dominas?</label>
-            <?php
-            foreach ($options as $option) {
-                echo '<input type="checkbox" name="programing_languages[]" value="' . $option . '">';
-                echo ' '.$option . '<br>';
-            }
-            ?>
-
-        <label>Disponibilidad para viajar:</label>
-            <label>
-                <input type="radio" name="travel_availability" value="disponible" required> Sí
-            </label>
-            <label>
-                <input type="radio" name="travel_availability" value="no disponible" required> No
-            </label>
-
-        <label>Hablas ingles:</label>
-            <label>
-                <input type="radio" name="english_skills" value="dominado" required> Sí
-            </label>
-            <label>
-                <input type="radio" name="english_skills" value="no dominado" required> No
-            </label>
-
+        
+        <label>¿Que lenguajes o framworks dominas?</label>
+        <div class="checkboxes">
+                <?php
+                foreach ($options as $option) {
+                    echo '<input type="checkbox" name="programing_languages[]" value="' . $option . '">';
+                    echo ' '.$option . '<br>';
+                }
+                ?>
+        </div>
+        
+        
+        <div class="radio">
+            <label>Disponibilidad para viajar:</label>
+            <div class="radioOptions">
+                Sí<input type="radio" name="travel_availability" value="disponible" required>
+                No<input type="radio" name="travel_availability" value="no disponible" required>
+            </div>
+                
+            <label>Hablas ingles:</label>
+            <div class="radioOptions">
+                Sí<input type="radio" name="english_skills" value="dominado" required> 
+                No<input type="radio" name="english_skills" value="no dominado" required>
+            
+            </div>
+        </div>
+            
         <label for="desire_position"aria-placeholder="Posición a aplicar:">Posición a aplicar:</label>
             <?php
             echo "<select id='desire_position'  name='desire_position' required>";
@@ -245,11 +256,14 @@ clave:";
    
             echo "</select>";
             ?>
+        
+        <div class="buttons">
+            <a href="../../elim.php">Regresar</a>
+            <input  type="submit" name="submit" value="Enviar">  
+        </div>
 
-        <input  type="submit" name="submit" value="Enviar">  
     </form>
 
-    <a href="../../elim.php">Regresar</a>
 </body>
 <?php
 }
