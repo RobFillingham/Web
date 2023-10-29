@@ -10,12 +10,12 @@
         include('indexT.php');
     ?>
     <p>Elemental</p><br><br><br><br><br><br>
-    <p>Si</p><br><br><br><br><br><br>
-    <p>Si</p><br><br><br><br><br><br>
-    <p>Si</p><br><br><br><br><br><br>
-    <p>Si</p><br><br><br><br><br><br>
-    <p>Si</p><br><br><br><br><br><br>
-    <p>Si</p><br><br><br><br><br><br>
+    <p>1</p><br><br><br><br><br><br>
+    <p>2i</p><br><br><br><br><br><br>
+    <p>3</p><br><br><br><br><br><br>
+    <p>4</p><br><br><br><br><br><br>
+    <p>5</p><br><br><br><br><br><br>
+    <p>6</p><br><br><br><br><br><br>
     <?php
         include('footer.html');
     ?>
