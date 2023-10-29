@@ -1,0 +1,26 @@
+body{
+    height: 800px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #231b31;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    margin-bottom: 50px;
+}
+
+.title h3{
+    font-size: 40px;
+}
