@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="css/nav.css">
 </head>
 
-<header>
-        <img class="logo" src="MEDIA/logoCompleto.png" alt="logo" height="200px">
+<header id="navbar">
+        <img class="logo" src="MEDIA/logoCompletoMORADO.png" alt="logo" width="135px" height="30px">
         <nav>
             <ul class="nav_links">
+                <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Vacantes</a></li>
-                <li><a href="#">log</a></li>
             </ul>
         </nav>
         <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="custom-button btn dropdown-toggle">Login <span class="caret"></span></button>
@@ -62,10 +62,65 @@
         </div>
     </div>
 </div>
-
-
-
+<div id="padd"></div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('#navbar');
+    const logo = document.querySelector('.logo');
+    const btn = document.querySelector('#dropdownMenu1');
+
+    if (window.scrollY > 120) {
+        navbar.style.backgroundColor = '#231b31'; // Cambia el color de fondo al hacer scroll
+        navbar.style.color = '#fffafa'; // Cambia el color del texto al hacer scroll
+        logo.src = 'MEDIA/logoCompleto.png';
+        logo.style.width = '135px';
+        btn.style.color = '#231b31';
+        btn.style.backgroundColor = '#dddddd;';
+        // También actualiza los estilos en :hover
+        btn.addEventListener('mouseenter', function() {
+            btn.style.backgroundColor = '#332848';
+            btn.style.color = '#fff';
+        });
+
+        btn.addEventListener('mouseleave', function() {
+            btn.style.backgroundColor = '#dddddd'; // Cambia el color de fondo al salir de :hover
+            btn.style.color = '#231b31'; // Cambia el color de texto al salir de :hover
+        });
+    } else {
+        navbar.style.backgroundColor = ' #e36124'; // Restaura el color de fondo original
+        navbar.style.color = '#fffafa'; // Restaura el color de texto original
+        logo.src = 'MEDIA/logoCompletoMORADO.png';
+        logo.style.width = '135px';
+        btn.style.color = '#FF5733';
+        btn.style.backgroundColor = '#dddddd;';
+        // También actualiza los estilos en :hover
+        btn.addEventListener('mouseenter', function() {
+            btn.style.backgroundColor = '#f3694a';
+            btn.style.color = '#fff';
+        });
+
+        btn.addEventListener('mouseleave', function() {
+            btn.style.backgroundColor = '#dddddd'; // Cambia el color de fondo al salir de :hover
+            btn.style.color = '#FF5733'; // Cambia el color de texto al salir de :hover
+        });
+    }
+    /*if(window.scrollY < 120){
+        navbar.style.position = 'relative';
+        navbar.style.opacity = '1';
+    }
+    if(window.scrollY > 119 && window.scrollY < 128){
+        navbar.style.position = 'fixed';
+        navbar.style.opacity = '0';
+        navbar.style.top = '-100px';
+    }
+    if(window.scrollY > 127){
+        navbar.style.opacity = '1';
+        navbar.style.top = '0';
+    }*/
+        
+    
+});
+</script>
