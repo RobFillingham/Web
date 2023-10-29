@@ -29,7 +29,7 @@ require 'formulario.php';
     
     echo "<br> cuenta insertada <br>";   
      
-    echo "<br><a href='../index.php'>regresar</a>";
+    echo "<br><a href='../elim.php'>regresar</a>";
 
 
 ?>

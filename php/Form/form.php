@@ -1,6 +1,6 @@
 <?php
     require('fpdf186/fpdf.php');
-
+    session_start();
 
     class PDF extends FPDF {
         function Header() {
@@ -92,15 +92,15 @@
         $desire_position = $_POST["desire_position"];
         
         //MODIFICAR EL REGISTRO DEL USUARIO A QUE YA MANDO LA FORMA
-        /*
+        
         $file = fopen("../../data/archivo.txt","r");
         $file2 = fopen("../../data/archivo2.txt","a+");
 
         while (!feof($file)) {
             $linea = fgets($file);
             if ($linea != "") {
-                $aux = preg_split("/[\s,]+/", $linea);   /*https://www.w3schools.com/php/func_regex_preg_split.asp
-                                                https://www.w3schools.com/php/php_ref_regex.asp
+                $aux = preg_split("/[\s,]+/", $linea);   //https://www.w3schools.com/php/func_regex_preg_split.asp
+                                               // https://www.w3schools.com/php/php_ref_regex.asp
                 $correo = $aux[0];
                 $contrasena = $aux[1];
                 $form= $aux[2];
@@ -123,9 +123,9 @@
         fclose($file);
         fclose($file2);
 
-        unlink("archivo.txt");
-        rename("archivo2.txt","archivo.txt");
-        */
+        unlink("../../data/archivo.txt");
+        rename("../../data/archivo2.txt","../../data/archivo.txt");
+        
     }
 
     if(isset($_POST["submit"])) {
@@ -249,7 +249,7 @@ clave:";
         <input  type="submit" name="submit" value="Enviar">  
     </form>
 
-    <a href="../../indexT.php">Regresar</a>
+    <a href="../../elim.php">Regresar</a>
 </body>
 <?php
 }

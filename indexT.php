@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +16,11 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Vacantes</a></li>
+                <?php
+                    if(isset($_SESSION["correo"])){
+                        echo '<li><a href="php/Vacantes.php">Vacantes</a></li>';
+                    }
+                ?>
             </ul>
         </nav>
         <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="custom-button btn dropdown-toggle">Login <span class="caret"></span></button>

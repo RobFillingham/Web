@@ -42,10 +42,10 @@
                 <img src="../img/vacantes2.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img src="../img/vacantes4.jpg" class="d-block w-100" alt="...">
+                <img src="../img/vacantes4(1).jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img src="../img/vacantes3.webp" class="d-block w-100" alt="...">
+                <img src="../img/vacantes5.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <div>
@@ -63,21 +63,24 @@
             
                 <h1>¿Por qué trabajar con nosotros?</h1>
                 <p>
-                Trabajar con nosotros significa formar parte de una cultura de innovación que fomenta la creatividad y la colaboración. Ofrecemos un entorno donde el desarrollo profesional es una prioridad, con oportunidades constantes para crecer y aprender. Lo más importante, en nuestra empresa, puedes marcar una diferencia real y significativa a través de proyectos que impactan positivamente en el mundo. Valoramos la diversidad y el respeto, promoviendo un ambiente inclusivo donde todos son bienvenidos. Además, recompensamos el esfuerzo y el talento con beneficios y reconocimiento. 
+                Trabajar con nosotros significa formar parte de una cultura de innovación que fomenta la creatividad y la colaboración. 
+                Ofrecemos un entorno donde el desarrollo profesional es una prioridad, con oportunidades constantes para crecer y aprender. 
+                Además, recompensamos el esfuerzo y 
+                el talento con beneficios y reconocimiento. 
                 Únete a nosotros y sé parte de nuestra exitosa trayectoria, donde tu contribución es fundamental.
                 </p>
            
                 <!-- HTML !-->
                 <?php
-                    /*if($_SESSION["form"] != 1){
-                        echo '<a href="formulario.php"><button class="button-87" role="button">Formulario</button></a>';
+                    if($_SESSION["form"] != 1){
+                        echo '<a href="Form/form.php"><button class="button-87" role="button">Formulario</button></a>';
                     }else if($_SESSION["examen"] == -1){
                         echo '<a href="examen.php"><button class="button-87" role="button">Examen</button></a>';
-                    }else{*/
+                    }else{
                         ?>
                         <img class="animate__bounceIn" src="../img/checkmark.png" alt="">
                     <?php
-                    //}
+                    }
                 ?>
             
         </div>

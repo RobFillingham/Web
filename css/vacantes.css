@@ -8,14 +8,23 @@
 
 .text1{
     width: 50%;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .text1 h3{
     text-align: center;
 }
 
+.sub1{
+    margin-bottom: 40px;
+}
+
+
+
 .text2{
     width: 50%;
+    margin-bottom: 100px;
 }
 
 .text2 h3{
@@ -26,13 +35,29 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 40%;
+    width: 60%;
+    margin-bottom: 140px;
+}
+.icons i{
+    font-size: 80px;
 }
 .box4{
     display: flex;
     flex-direction: column;
     align-items: center;
     width:40%;
+    margin-top: 140px;
+
+}
+
+.box4 p{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.box4 img{
+    margin-bottom: 100px;
 }
 
 .button-87 {
