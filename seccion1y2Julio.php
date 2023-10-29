@@ -18,9 +18,10 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             height: 0px;
-            padding: 100px 20vw;
+            padding: 80px 20vw;
+            
         }
 
         .orange{
@@ -39,15 +40,21 @@
         .layer1{
             background-image: url('./layer1.svg');
         }
+
+        .First{
+            position: absolute;
+            font-size: 50px;
+            font-weight: bold;
+            color: #231b31;
+            margin-left: -100px;
+            margin-top: 50px;
+        }
     </style>
 </head>
 <body>
     <section class="orange">
         <div class="First">
-        <h1>PROBANDO CURVAS</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dignissimos at, soluta non, commodi ipsa cumque ullam, quia aut nesciunt tenetur harum itaque iusto ab ducimus laudantium rem odit? Magnam.
-        Beatae fuga numquam pariatur culpa ullam magni id repudiandae totam architecto quod earum explicabo adipisci exercitationem deleniti qui aut voluptates at cupiditate perspiciatis, doloremque possimus? Eum minus illo ea iure.
-        Aliquam sequi reprehenderit culpa totam aliquid inventore adipisci dolor eum blanditiis ipsam maxime pariatur quod dignissimos magni facilis beatae quae, quos eaque repellat. Dolorem placeat ad ipsa facere totam obcaecati.</p>
+        <p>Donde la inovacion <br>se encuentra con <br>el codigo uniendote <br> a <span style="color:white">teKKet</span></p>
         </div>
     </section>
 

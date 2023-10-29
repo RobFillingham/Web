@@ -5,13 +5,13 @@
     class PDF extends FPDF {
         function Header() {
             $pageWidth = $this->GetPageWidth();
-            $logoWidth = 90;  
-            $logoHeight = 40;  
+            $logoWidth = 120;  
+            $logoHeight = 30;  
             $logoX = ($pageWidth - $logoWidth) / 2;
-            $this->Image('img/Luismiguel.jpg', $logoX, 5, $logoWidth, $logoHeight);
-            $this->SetY(50); 
-            $this->SetFont('Arial', 'B', 24); // Define fuente para el texto
-            $this->Cell(0, 10, 'TEKKET', 0, 1, 'C'); // Agrega el texto
+            $this->Image('img/logoCompleto.png', $logoX, 5, $logoWidth, $logoHeight);
+            $this->SetY(40); 
+            $this->SetFont('Arial', 'B', 16); // Define fuente para el texto
+            $this->Cell(0, 10, '"Donde la innovacion se encuentra con el codigo"', 0, 1, 'C'); // Agrega el texto
         }
     
         function Footer() {
@@ -110,6 +110,7 @@
 
                 if ($correo === $_SESSION["correo"]) {
                     $linea = $correo." ".$contrasena." 1 ".$examen." ".$codigoE." ".$nombre."\n";
+                    $_SESSION["form"] = 1;
                     fwrite($file2, $linea);
                     break;
                 }
@@ -135,7 +136,7 @@
 
 El solicitante proporciono la siguiente informacion: Numero de telefono: $cel_number, fecha de nacimiento: $birthday_day de $birthday_month de $birthday_year.";
 
-        $text2 = "$name posee experiencia en los siguientes lenguajes de programacion: $programing_languages. Ademas, esta $travel_availability para viajar al extranjero y posee el idioma ingles: $english_skills.
+        $text2 = "$name posee experiencia en los siguientes lenguajes de programacion: $programing_languages. Ademas, esta $travel_availability para viajar al extranjero y posee el idioma ingles $english_skills.
 
 A continuacion se le proporcionara su clave de acceso para realizar el examen de conocimientos, le deseamos lo mejor en todo el proceso de seleccion.
         
