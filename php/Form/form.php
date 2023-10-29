@@ -110,6 +110,7 @@
 
                 if ($correo === $_SESSION["correo"]) {
                     $linea = $correo." ".$contrasena." 1 ".$examen." ".$codigoE." ".$nombre."\n";
+                    $_SESSION["form"] = 1;
                     fwrite($file2, $linea);
                     break;
                 }

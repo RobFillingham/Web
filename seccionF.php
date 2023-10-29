@@ -36,7 +36,9 @@
         </div>
     </div>
 
-
+    <div class="section-prueba">
+            <img src="MEDIA/Software.png" alt="">
+    </div>
     <!-- Seccion Rombo 2 -->
     <div class="section-container2">
         <div class="table-container">
@@ -44,9 +46,9 @@
 
             <div class="table-cell">
                 <div class="text-container">
-                    <h4>Creatividad</h4>
-                    <p>Nuestro proceso de desarrollo web combina la creatividad y la experiencia</p>
-                    <p> técnica para crear sitios web efectivos y atractivos</p>
+                    <h4>Datos</h4>
+                    <p>Nuestro proceso de desarrollo web combina la creatividad y el analisis</p>
+                    <p> de datos para crear sitios web efectivos y atractivos</p>
                     <button>Ver Mas</button>
                 </div>
             </div>
@@ -54,14 +56,17 @@
 
             <div class="table-cell diamond">
                 <div data-aos="fade-up-left">
-                    <img src="img/img2.jpg" alt="" id="img2">
+                    <img src="img/img1.jpg" alt="" id="img2" width="400px" height="400px">
                 </div>
             </div>
 
 
         </div>
     </div>
-
+    
+    <div class="section-prueba">
+        <img src="MEDIA/creatividad.png" alt="">
+    </div>
 
     <!-- Seccion Rombo 3 -->
     <div class="section-container3">
@@ -88,6 +93,9 @@
         </div>
     </div>
 
+    <div class="section-prueba">
+        <img src="MEDIA/app.png" alt="" style="margin-top: -30px;">
+    </div>
 
     <div class="section-container4">
     <table>
