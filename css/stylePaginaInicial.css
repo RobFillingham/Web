@@ -16,8 +16,9 @@ section {
 
 }
 
-.orange {
+ .orange {
     background: #e36124;
+    
 }
 
 .purple {
@@ -33,7 +34,7 @@ section {
 
 
 .First {
-    position: relative;
+    position: absolute;
     font-size: 50px;
     font-weight: bold;
     color: #231b31;
@@ -42,14 +43,14 @@ section {
 }
 
 .guy{
-    position: absolute;
+   
     margin-top: 150px;
     margin-left: 500px;
     
     
 }
 .guy2{
-    position: absolute;
+    
     margin-top: 150px;
     margin-left: 500px;
     animation: crossfade2 8s infinite;
