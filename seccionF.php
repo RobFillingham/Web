@@ -36,8 +36,8 @@
         </div>
     </div>
 
-    <div class="section-prueba">
-            <img src="MEDIA/Software.png" alt="">
+    <div >
+            <img class="section-prueba" src="MEDIA/Software.png" alt="">
     </div>
     <!-- Seccion Rombo 2 -->
     <div class="section-container2">
