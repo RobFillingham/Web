@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#contenedor-1{
+    width: 100%;
+}
+#contenedor-2{
+    width: 100%;
+}
+
+
+@media (max-width: 599px) {
+    #contenedor-1 {
+      flex-direction: column;
+    }
+  }
