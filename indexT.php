@@ -71,8 +71,10 @@
     const navbar = document.querySelector('#navbar');
     const logo = document.querySelector('.logo');
     const btn = document.querySelector('#dropdownMenu1');
+    const div = document.querySelector('#padd');
 
-    if (window.scrollY > 120) {
+    if (window.scrollY > 220) {
+        div.style.height = '120px';
         navbar.style.backgroundColor = '#231b31'; // Cambia el color de fondo al hacer scroll
         navbar.style.color = '#fffafa'; // Cambia el color del texto al hacer scroll
         logo.src = 'MEDIA/logoCompleto.png';
@@ -89,7 +91,17 @@
             btn.style.backgroundColor = '#dddddd'; // Cambia el color de fondo al salir de :hover
             btn.style.color = '#231b31'; // Cambia el color de texto al salir de :hover
         });
+        if(window.scrollY > 400){
+            navbar.style.opacity = '1';
+            navbar.style.top = '0';
+        }else{
+            navbar.style.opacity = '0';
+            navbar.style.position = 'fixed';
+            navbar.style.top = '-140px';
+        }
+        
     } else {
+        div.style.height = '0px';
         navbar.style.backgroundColor = ' #e36124'; // Restaura el color de fondo original
         navbar.style.color = '#fffafa'; // Restaura el color de texto original
         logo.src = 'MEDIA/logoCompletoMORADO.png';
@@ -106,21 +118,10 @@
             btn.style.backgroundColor = '#dddddd'; // Cambia el color de fondo al salir de :hover
             btn.style.color = '#FF5733'; // Cambia el color de texto al salir de :hover
         });
-    }
-    /*if(window.scrollY < 120){
         navbar.style.position = 'relative';
-        navbar.style.opacity = '1';
-    }
-    if(window.scrollY > 119 && window.scrollY < 128){
-        navbar.style.position = 'fixed';
-        navbar.style.opacity = '0';
-        navbar.style.top = '-100px';
-    }
-    if(window.scrollY > 127){
-        navbar.style.opacity = '1';
         navbar.style.top = '0';
-    }*/
+        navbar.style.opacity = '1';
         
-    
+    }
 });
 </script>
