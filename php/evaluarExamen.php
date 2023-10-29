@@ -38,6 +38,7 @@
             if ($correo === $_SESSION["correo"]) {
                 $linea = $correo." ".$contrasena." ".$form." ".$calificacion." ".$codigoE." ".$nombre."\n";
                 fwrite($file2, $linea);
+                $_SESSION["examen"] = $calificacion;
                 break;
             }
             else{
