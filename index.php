@@ -86,20 +86,21 @@ session_start();
         <?php
             }
         ?>
+    </div>
 
 </header>
 <div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>Registro</h3>
+                <h3 style="color:black;">Registro</h3>
                 <button type="button" class="close font-weight-light" data-dismiss="modal" aria-hidden="true">×</button>
             </div>
             <form class="form" role="form" action="php/registro.php" method="post">
             <div class="modal-body">
-                <p>Primer Nombre: <input type="text" name="nombre" required> </p>
-                <p>Correo: <input type="email" name="email" required> </p>
-                <p>Contraseña: <input type="text" name="contra" required> </p>
+                <p style="color:black;">Primer Nombre: <input type="text" name="nombre" required> </p>
+                <p style="color:black;">Correo: <input type="email" name="email" required> </p>
+                <p style="color:black;">Contraseña: <input type="text" name="contra" required> </p>
              
                 
             </div>

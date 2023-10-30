@@ -9,7 +9,9 @@ session_start();
     <link rel="stylesheet" href="css/nav.css">
 </head>
 
-<header id="navbar">
+<!-- HEADER -->
+<div class="all">
+    <header id="navbar">
         <img class="logo" src="MEDIA/logoCompletoMORADO.png" alt="logo" width="135px" height="30px">
         <nav>
             <ul class="nav_links">
@@ -25,8 +27,24 @@ session_start();
         </nav>
         <?php
             if(isset($_SESSION["correo"])){
-                echo '<a href="php/logout.php"><button class="cta" style="background-color: #f18067;padding: 15px;border-radius: 5px;">Logout</button></a>';
-        ?>
+                ?>
+
+                <div class="derecha"></div>
+                    <?php
+                        date_default_timezone_set('America/Mexico_City');
+                        $hour=date("H");
+                        if($hour<12){
+                            echo "<p class='Hola'>Buenos Dias ".$_SESSION["nombre"]."!";
+                        }else if($hour<20){
+                            echo "<p class='Hola'>Buenas Tardes ".$_SESSION["nombre"]."!";
+
+                        }else{
+                            echo "<p class='Hola'>Buenas Noches ".$_SESSION["nombre"]."!";
+
+                        }
+                    ?>
+                    <a href="php/logout.php"><button class="cta" style="background-color: #f18067;padding: 15px;border-radius: 5px;">Logout</button></a>
+                </div>
           
         <?php
             }else{
@@ -55,20 +73,21 @@ session_start();
         <?php
             }
         ?>
+    </div>
 
 </header>
 <div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>Registro</h3>
+                <h3 style="color:black;">Registro</h3>
                 <button type="button" class="close font-weight-light" data-dismiss="modal" aria-hidden="true">×</button>
             </div>
             <form class="form" role="form" action="php/registro.php" method="post">
             <div class="modal-body">
-                <p>Primer Nombre: <input type="text" name="nombre" required> </p>
-                <p>Correo: <input type="email" name="email" required> </p>
-                <p>Contraseña: <input type="text" name="contra" required> </p>
+                <p style="color:black;">Primer Nombre: <input type="text" name="nombre" required> </p>
+                <p style="color:black;">Correo: <input type="email" name="email" required> </p>
+                <p style="color:black;">Contraseña: <input type="text" name="contra" required> </p>
              
                 
             </div>
@@ -82,6 +101,8 @@ session_start();
     </div>
 </div>
 <div id="padd"></div>
+        </div>
+    <!-- /HEADER -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
