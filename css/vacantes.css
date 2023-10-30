@@ -93,5 +93,21 @@
     transform: scale(0.95);
   }
 
+  .calificacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .calificacion img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .calificacion h4{
+    margin-bottom: 50px;
+  }
+
 
  

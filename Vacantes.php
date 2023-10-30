@@ -105,12 +105,23 @@
                 <!-- HTML !-->
                 <?php
                     if($_SESSION["form"] != 1){
-                        echo '<a class="link" href="php/Form/form.php"><button class="button-87" role="button">Formulario</button></a>';
+                        echo '<a class="link" href="form.php"><button class="button-87" role="button">Formulario</button></a>';
                     }else if($_SESSION["examen"] == -1){
                         echo '<a class="link" href="examen.php"><button class="button-87" role="button">Examen</button></a>';
-                    }else{
+                    }else if($_SESSION["examen"]>=7){
                         ?>
-                        <img class="animate__bounceIn" src="img/checkmark.png" alt="">
+                        <div class="calificacion">
+                            <img class="animate__bounceIn" src="img/checkmark.png" alt="">
+                            <h4>Calificacion: <?php echo $_SESSION["examen"];?></h4>
+                        </div>
+
+                    <?php
+                    }else{
+                    ?>
+                        <div class="calificacion">
+                            <img class="animate__bounceIn" src="img/cross.webp" alt="">
+                            <h4>Calificacion: <?php echo $_SESSION["examen"];?></h4>
+                        </div>
                     <?php
                     }
                 ?>
