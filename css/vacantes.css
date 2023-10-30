@@ -22,15 +22,18 @@
     margin-bottom: 40px;
 }
 
-
+.link{
+    text-decoration: none;
+}
 
 .text2{
     width: 50%;
     margin-bottom: 100px;
 }
 
-.text2 h3{
+.text2 h6{
     text-align: center;
+    font-size: 10px;
 }
 
 .icons{
@@ -91,6 +94,22 @@
   
   .button-87:active {
     transform: scale(0.95);
+  }
+
+  .calificacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .calificacion img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .calificacion h4{
+    margin-bottom: 50px;
   }
 
 

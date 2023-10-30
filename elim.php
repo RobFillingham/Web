@@ -17,7 +17,7 @@
     <p>5</p><br><br><br><br><br><br>
     <p>6</p><br><br><br><br><br><br>
     <?php
-        include('footer.html');
+        include('footer.php');
     ?>
 </body>
 </html>

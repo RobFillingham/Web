@@ -44,7 +44,7 @@
         <p>¡Tu cuenta se ha registrado con éxito!</p>
     </div>
     <div class="container">
-        <a href="../elim.php" class="returnbtn">Regresar</a>
+        <a href="../indexA.php" class="returnbtn">Regresar</a>
     </div>
 </div>
 </body>
