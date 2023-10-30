@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/26749c556a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -22,6 +23,31 @@
     include("indexT.php");
     ?>
     <!-- Julios div-->
+    <!-- CURVE -->
+    <svg id="visual" viewBox="20 0 1000 450" width="110%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <rect x="0" y="0" width="1000" height="450" fill="#e36124"></rect>
+
+
+        <path id="blob1" d="M0 267L41.7 268.2C83.3 269.3 166.7 271.7 250 269.3C333.3 267 416.7 260 500 255.5C583.3 251 666.7 249 750 257.5C833.3 266 916.7 285 958.3 294.5L1000 304L1000 451L958.3 451C916.7 451 833.3 451 750 451C666.7 451 583.3 451 500 451C416.7 451 333.3 451 250 451C166.7 451 83.3 451 41.7 451L0 451Z" fill="#231b31" stroke-linecap="round" stroke-linejoin="miter"></path>
+        <path id="blob2" style="visibility: hidden;" d="M0 303L33.3 300C66.7 297 133.3 291 200 290.7C266.7 290.3 333.3 295.7 400 289.7C466.7 283.7 533.3 266.3 600 260.3C666.7 254.3 733.3 259.7 800 258.5C866.7 257.3 933.3 249.7 966.7 245.8L1000 242L1000 451L966.7 451C933.3 451 866.7 451 800 451C733.3 451 666.7 451 600 451C533.3 451 466.7 451 400 451C333.3 451 266.7 451 200 451C133.3 451 66.7 451 33.3 451L0 451Z" fill="#231b31" stroke-linecap="round" stroke-linejoin="miter"></path>
+
+
+    </svg>
+
+    <script>
+        const tween = KUTE.fromTo(
+            '#blob1', {
+                path: '#blob1'
+            }, {
+                path: '#blob2'
+            }, {
+                repeat: 999,
+                duration: 9000,
+                yoyo: true
+            },
+        )
+        tween.start()
+    </script>
 
     <div class="abajo">
         <div class="text1" >
