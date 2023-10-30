@@ -19,101 +19,8 @@ session_start();
     <link href="./css/stylePaginaInicial.css" rel="stylesheet">
 </head>
 
-
-
 <body>
-    <!-- HEADER -->
-   <div class="all">
-    <header id="navbar">
-        <img class="logo" src="MEDIA/logoCompletoMORADO.png" alt="logo" width="135px" height="30px">
-        <nav>
-            <ul class="nav_links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <?php
-                    if(isset($_SESSION["correo"])){
-                        echo '<li><a href="Vacantes.php">Vacantes</a></li>';
-                    }
-                ?>
-            </ul>
-        </nav>
-        <?php
-            if(isset($_SESSION["correo"])){
-                ?>
-
-                <div class="derecha"></div>
-                    <?php
-                        date_default_timezone_set('America/Mexico_City');
-                        $hour=date("H");
-                        if($hour<12){
-                            echo "<p class='Hola'>Buenos Dias ".$_SESSION["nombre"]."!";
-                        }else if($hour<20){
-                            echo "<p class='Hola'>Buenas Tardes ".$_SESSION["nombre"]."!";
-
-                        }else{
-                            echo "<p class='Hola'>Buenas Noches ".$_SESSION["nombre"]."!";
-
-                        }
-                    ?>
-                    <a href="php/logout.php"><button class="cta" style="background-color: #f18067;padding: 15px;border-radius: 5px;">Logout</button></a>
-                </div>
-          
-        <?php
-            }else{
-        ?>
-        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="custom-button btn dropdown-toggle">Login <span class="caret"></span></button>
-        <ul class="dropdown-menu dropdown-menu-right mt-2">
-            <li class="px-3 py-2">
-                <form class="form" role="form" action="php/login.php" method="post">
-                    <div class="form-group">
-                        <input name="email" id="emailInput" placeholder="Email" class="form-control form-control-sm" type="email" required="">
-                    </div>
-                    <div class="form-group">
-                        <input name="palabra_secreta" id="passwordInput" placeholder="Password" class="form-control form-control-sm" type="password" required="">
-                    </div>
-                        
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block">Login</button>
-                    </div>
-                    <div class="form-group text-center">
-                        <small><a href="#" data-toggle="modal" data-target="#modalPassword">Registrar cuenta</a></small>
-                    </div>
-                </form>
-            </li>
-        </ul>
-
-        <?php
-            }
-        ?>
-
-</header>
-<div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Registro</h3>
-                <button type="button" class="close font-weight-light" data-dismiss="modal" aria-hidden="true">×</button>
-            </div>
-            <form class="form" role="form" action="php/registro.php" method="post">
-            <div class="modal-body">
-                <p>Primer Nombre: <input type="text" name="nombre" required> </p>
-                <p>Correo: <input type="email" name="email" required> </p>
-                <p>Contraseña: <input type="text" name="contra" required> </p>
-             
-                
-            </div>
-            <div class="modal-footer">                
-                <div class="form-group">                  
-                  <button type="submit" class="btn btn-primary btn-block">Enviar</button>
-               </div>
-            </div>
-            </form>
-        </div>
-    </div>
-</div>
-<div id="padd"></div>
-        </div>
+    
     <!-- /HEADER -->
     
 <!-- Seccion 1 y 2 J -->
@@ -347,8 +254,8 @@ session_start();
    </div>
 
    <!-- HEADER -->
-<div class="all" >
-    <header id="navbar" >
+   <div class="all">
+    <header id="navbar">
         <img class="logo" src="MEDIA/logoCompletoMORADO.png" alt="logo" width="135px" height="30px">
         <nav>
             <ul class="nav_links">
@@ -422,7 +329,7 @@ session_start();
 </div>
 <div id="padd"></div>
         </div>
-    <!-- /HEADER -->
+
    <!-- Footer -->
    
 
