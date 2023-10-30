@@ -121,6 +121,6 @@
 </html>
 <div class="col-xs-6">
   <?php
-    include 'footer.html';
+    include 'footer.php';
   ?>  
 </div>
