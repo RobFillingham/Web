@@ -1,4 +1,5 @@
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,20 @@
     <link rel="stylesheet" href="css/contactanos.css">
 </head>
 <body>
-    <header>
-        <?php
+    <?php
         include('indexT.php');
-        ?>
-    </header>
-    <main>
+    ?>
+    <body id="main">
 
-        <div id="contenedor-1" class="box">
+        <div id="contenedor-1" class="boxContact">
             <div id="contactText">
                 <h2>Contacto</h2>
                 <h3>Estamos aquí para apoyarte en el logro exitoso de tu proyecto</h3>
                 <p>Completa nuestro formulario y uno de nuestros expertos te contactará para programar una consulta gratuita.</p>
                 <h4>También puedes comunicarte con nosotros directamente al:</h4>
-                <div id="btn">
-                    <button type="button" class="btn btn-primary"><img src="MEDIA/iconos-Sociales/bxs-phone.svg" alt="tel">449 104 9995</button>
-                </div>
-                <div class="custom-button">
-                    <img src="MEDIA/iconos-Sociales/bxs-phone.svg" alt="tel">
-                    <span>449 104 9995</span>
-                  </div>
-                </div>
+                <img id="image" src="MEDIA/iconos-Sociales/bxs-phone.png" alt="phone" width="25px">
+                <button type="button" class="custom-button-2">449 104 9995</button>
+            </div>
             <div id="contactForm">
                 <form method="post" action="#">
                     <table>
@@ -55,7 +49,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="form-group">
+                                <div class="form-group select">
                                     <label for="formGroupExampleInput">Solución</label>
                                     <select class="custom-select">
                                         <option selected>Selecciona una opción</option>
@@ -74,7 +68,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="form-group">
+                                <div class="form-group select">
                                     <label for="formGroupExampleInput">Etapa en que se encuentra tu proyecto</label>
                                     <select class="custom-select">
                                         <option selected>Selecciona una opción</option>
@@ -96,19 +90,20 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <input type="submit" value="Enviar">
+                                <center><input type="submit" value="Enviar"></center>
                             </td>
                         </tr>
                     </table>
                   </form>
             </div>
         </div>
-        <div id="contenedor-2" class="box">
-            <div>
-                <img src="MEDIA/romboCesar.png" alt="computadora">
+        <hr style="border: none;border-top: 2px solid #e36124;margin: 0 70px;">
+        <div id="contenedor-2" class="boxContact">
+            <div id="compu">
+                <center><img src="MEDIA/romboCesar.png" alt="computadora" width="400px"></center>
             </div>
-            <div>
-                <table>
+            <div id="datos">
+                <table id="tabla-2">
                     <tr>
                         <td>
                             <p class="titulos">DIRECCIÓN</p>
@@ -118,7 +113,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td id="location">
                             <p>Jorge Reynoso 1703-15, Desarrollo Especial Galerías, 20120 Aguascalientes, Ags, Mexico</p>
                         </td>
                         <td>
@@ -127,7 +122,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2" id="city">
                             <p>Wework Aguascalientes</p>
                             <p>Wework Monterrey</p>
                             <p>Wework Guadalajara</p>
@@ -140,20 +135,18 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <p>info@tekket.com.mx</p>
+                            <p id="correo">info@tekket.com.mx</p>
                         </td>
                     </tr>
                 </table>
             </div>
         </div>
 
-    </main>
-    <footer>
+    </body>
         <?php
-        include('footer.html');
+        include('footer.php');
         ?>
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
+</html>
