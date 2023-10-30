@@ -15,7 +15,7 @@ session_start();
             <ul class="nav_links">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="pagDos.php">About</a></li>
-                <li><a href="contactanos.html">Contact</a></li>
+                <li><a href="contactanos.php">Contact</a></li>
                 <?php
                     if(isset($_SESSION["correo"])){
                         echo '<li><a href="Vacantes.php">Vacantes</a></li>';
