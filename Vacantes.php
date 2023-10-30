@@ -79,9 +79,9 @@
                 <!-- HTML !-->
                 <?php
                     if($_SESSION["form"] != 1){
-                        echo '<a href="form.php"><button class="button-87" role="button">Formulario</button></a>';
+                        echo '<a class="link" href="php/Form/form.php"><button class="button-87" role="button">Formulario</button></a>';
                     }else if($_SESSION["examen"] == -1){
-                        echo '<a href="examen.php"><button class="button-87" role="button">Examen</button></a>';
+                        echo '<a class="link" href="examen.php"><button class="button-87" role="button">Examen</button></a>';
                     }else{
                         ?>
                         <img class="animate__bounceIn" src="img/checkmark.png" alt="">

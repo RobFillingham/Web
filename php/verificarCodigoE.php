@@ -12,11 +12,11 @@
 
 <?php
     if(isset($_POST["submit"])){
-        if($_POST["code"] == $_SESSION["code"])
+        if($_POST["code"] == $_SESSION["codigo"])
             header("Location: ../examen.php");
         else{
             ?>
-            <div class="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            <form class="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <div class="title">Hola <?php echo $_SESSION["nombre"] ?>,</div>
                 <div class="subtitle">Ingresa el codigo para tu examen:</div>
                 <div class="input-container ic1">
@@ -24,15 +24,16 @@
                     <div class="cut"></div>
                     <label for="firstname" class="placeholder">Código</label>
                 </div>
-                <button type="text" class="submit">Codigo Incorrecto!</button>
-            </div>
+                <input class="submit" type="submit" name="submit" value="Código Incorrecto"> 
+                <button class="submit"><a class="link" href="../elim.php">Regresar</a></button>
+            </form>
             <?php
         }
-    }
+    }else{
 ?>
 
 <body>
-    <div class="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    <form class="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
       <div class="title">Hola <?php echo $_SESSION["nombre"] ?>,</div>
       <div class="subtitle">Ingresa el codigo para tu examen:</div>
       <div class="input-container ic1">
@@ -40,7 +41,10 @@
         <div class="cut"></div>
         <label for="firstname" class="placeholder">Código</label>
     </div>
-      <button type="text" class="submit">Okay</button>
-    </div>
+    <input  class="submit" type="submit" name="submit" value="Enviar"> 
+    </form>
 </body>
+<?php
+    }
+?>
 </html>
