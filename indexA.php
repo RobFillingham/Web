@@ -38,8 +38,24 @@ session_start();
         </nav>
         <?php
             if(isset($_SESSION["correo"])){
-                echo '<a href="php/logout.php"><button class="cta" style="background-color: #f18067;padding: 15px;border-radius: 5px;">Logout</button></a>';
-        ?>
+                ?>
+
+                <div class="derecha"></div>
+                    <?php
+                        date_default_timezone_set('America/Mexico_City');
+                        $hour=date("H");
+                        if($hour<12){
+                            echo "<p class='Hola'>Buenos Dias ".$_SESSION["nombre"]."!";
+                        }else if($hour<20){
+                            echo "<p class='Hola'>Buenas Tardes ".$_SESSION["nombre"]."!";
+
+                        }else{
+                            echo "<p class='Hola'>Buenas Noches ".$_SESSION["nombre"]."!";
+
+                        }
+                    ?>
+                    <a href="php/logout.php"><button class="cta" style="background-color: #f18067;padding: 15px;border-radius: 5px;">Logout</button></a>
+                </div>
           
         <?php
             }else{
