@@ -28,9 +28,9 @@ session_start();
         <img class="logo" src="MEDIA/logoCompletoMORADO.png" alt="logo" width="135px" height="30px">
         <nav>
             <ul class="nav_links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="pagDos.php">About</a></li>
+                <li><a href="contactanos.php">Contact</a></li>
                 <?php
                     if(isset($_SESSION["correo"])){
                         echo '<li><a href="Vacantes.php">Vacantes</a></li>';
