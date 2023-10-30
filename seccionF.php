@@ -1,3 +1,4 @@
+
 <html>
     <head>
     <link rel="stylesheet" href="css/a1.css">
@@ -36,8 +37,8 @@
         </div>
     </div>
 
-    <div >
-            <img class="section-prueba" src="MEDIA/Software.png" alt="">
+    <div class="section-prueba">
+            <img src="MEDIA/Software.png" alt="">
     </div>
     <!-- Seccion Rombo 2 -->
     <div class="section-container2">

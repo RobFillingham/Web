@@ -14,7 +14,7 @@ include('indexT.php');
     <link rel="stylesheet" href="css/a1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/footer.css">
-
+    <link rel="icon" type="image/x-icon" href="./MEDIA/logoIcono.ico">
 </head>
 
 <body>
@@ -94,9 +94,12 @@ include('indexT.php');
     </div>
 <!-- Seccion 3 y 4 F -->
 <!-- Seccion Rombo 1 -->
-<div class="section-container1">
-        <div class="table-container">
 
+<div class="section-container1">
+    
+ <img class="img00" src="MEDIA/Software.png" alt=""> 
+
+        <div class="table-container">
 
             <div class="table-cell diamond">
                 <div data-aos="fade-right">
@@ -107,7 +110,8 @@ include('indexT.php');
 
             <div class="table-cell">
                 <div class="text-container">
-                    <h4>Tecnologías</h4>
+                    <h1>Tecnologías</h1>
+                    <hr class="line">
                     <p>Descubre cómo nuestro equipo de desarrolladores</p>
                     <p> trabaja con tecnologías de vanguardia.</p>
                     <button>Ver Mas</button>
@@ -118,17 +122,21 @@ include('indexT.php');
         </div>
     </div>
 
-    <div class="section-prueba">
-            <img src="MEDIA/Software.png" alt="">
-    </div>
+  
+           
+    
     <!-- Seccion Rombo 2 -->
     <div class="section-container2">
+    
+        <img class="img01" src="MEDIA/creatividad.png" alt="">
+    
         <div class="table-container">
 
 
             <div class="table-cell">
                 <div class="text-container">
-                    <h4>Datos</h4>
+                    <h1>Datos</h1>
+                    <hr class="line">
                     <p>Nuestro proceso de desarrollo web combina la creatividad y el analisis</p>
                     <p> de datos para crear sitios web efectivos y atractivos</p>
                     <button>Ver Mas</button>
@@ -146,12 +154,13 @@ include('indexT.php');
         </div>
     </div>
     
-    <div class="section-prueba">
-        <img src="MEDIA/creatividad.png" alt="">
-    </div>
+    
 
     <!-- Seccion Rombo 3 -->
     <div class="section-container3">
+     
+        <img class="img02" src="MEDIA/app.png" alt="" >
+    
         <div class="table-container">
 
 
@@ -164,7 +173,8 @@ include('indexT.php');
 
             <div class="table-cell">
                 <div class="text-container">
-                    <h4>Actualizacion</h4>
+                    <h1>Actualizacion</h1>
+                    <hr class="line">
                     <p>Nuestra última aplicación en acción: una interfaz de usuario intuitiva</p>
                     <p>y una experiencia fluida para los usuarios.</p>
                     <button>Ver Mas</button>
@@ -175,15 +185,20 @@ include('indexT.php');
         </div>
     </div>
 
-    <div class="section-prueba">
-        <img src="MEDIA/app.png" alt="" style="margin-top: -30px;">
-    </div>
+    
 
     <div class="section-container4">
     <table>
         <tr>
             <td>
-                <p id="text" class="animate__animated animate__backInLeft">Somos tu mejor opcion</p>
+            <div style="margin-left: 0px;" data-aos="fade-down" data-aos-once="true" data-aos-duration="1500">
+            <h1>Beneficios de trabajar con el grupo teKKet</h1>
+            <hr class="line">
+            <br>
+            <article>
+                <p>Al elegir trabajar con el Grupo Tekket, obtienes acceso a soluciones de software personalizadas diseñadas para satisfacer tus necesidades específicas. Nuestro equipo de expertos en software se dedica a entregar proyectos a tiempo, brindando un soporte continuo y manteniéndose a la vanguardia de la innovación tecnológica para garantizar el éxito de tu empresa</p>
+            </article>
+        </div>
             </td>
 
 
@@ -197,7 +212,8 @@ include('indexT.php');
 
                             <td rowspan="5">
                                 <div class="card1">
-                                    <img src="img/icon1.jpg" alt="">
+            
+                                    <img class="icon1W" src="img/icon1.jpg" alt="">
                                     <h2>Trabajo en Equipo</h2>
                                     <p>Trabajamos en armonía para componer soluciones de software excepcionales.</p>
                                 </div>
@@ -205,7 +221,7 @@ include('indexT.php');
 
 
                             <td >
-                                <div class="card1">
+                                <div class="card1" >
                                     <img src="img/icon2.jpg" alt="">
                                     <h2>Desarrollo agil</h2>
                                     <p> Saltamos los obstáculos, nos adaptamos al ritmo de los cambios y entregamos actuaciones sobresalientes en cada iteración.</p>
@@ -216,7 +232,7 @@ include('indexT.php');
 
                         <tr>
                             <td>
-                                <div class="card1">
+                                <div class="card1" >
                                     <img src="img/icon3.jpg" alt="">
                                     <h2>Sistemas Empresariales</h2>
                                     <p>Las empresas confían en nosotros para tejer conexiones invisibles y aumentar la eficiencia.</p>
@@ -271,7 +287,8 @@ include('indexT.php');
         AOS.init();
     </script>
  
-
+ 
 </body>
 
 </html>
+

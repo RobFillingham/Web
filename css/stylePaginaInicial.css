@@ -3,7 +3,8 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: white;
-    background: #231b31;
+    background: #231b31; 
+   
 }
 
 section {
@@ -17,14 +18,16 @@ section {
 }
 
  .orange {
-    background: #e36124;
     
+    background: #e36124;
+   
+
 }
 
 .purple {
     background: #231b31;
-    height: 100%;
-   
+    height: 80%;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -43,14 +46,14 @@ section {
 }
 
 .guy{
-   
+    position: absolute;
     margin-top: 150px;
     margin-left: 500px;
     
     
 }
 .guy2{
-    
+    position: absolute;
     margin-top: 150px;
     margin-left: 500px;
     animation: crossfade2 8s infinite;
@@ -249,6 +252,15 @@ section {
 .rombo3 {
     
     width: 50%; 
+    margin-top: -450px;
+    margin-left: 656px;
+    
+ 
+}
+
+.rombo4 {
+   
+    width: 10%; 
     margin-top: -450px;
     margin-left: 656px;
     

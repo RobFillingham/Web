@@ -93,38 +93,38 @@
         
         //MODIFICAR EL REGISTRO DEL USUARIO A QUE YA MANDO LA FORMA
         
-        // $file = fopen("../../data/archivo.txt","r");
-        // $file2 = fopen("../../data/archivo2.txt","a+");
+        $file = fopen("data/archivo.txt","r");
+        $file2 = fopen("data/archivo2.txt","a+");
 
-        // while (!feof($file)) {
-        //     $linea = fgets($file);
-        //     if ($linea != "") {
-        //         $aux = preg_split("/[\s,]+/", $linea);   //https://www.w3schools.com/php/func_regex_preg_split.asp
-        //                                        // https://www.w3schools.com/php/php_ref_regex.asp
-        //         $correo = $aux[0];
-        //         $contrasena = $aux[1];
-        //         $form= $aux[2];
-        //         $examen= $aux[3];
-        //         $codigoE = $aux[4];
-        //         $nombre = $aux[5];
+        while (!feof($file)) {
+            $linea = fgets($file);
+            if ($linea != "") {
+                $aux = preg_split("/[\s,]+/", $linea);   //https://www.w3schools.com/php/func_regex_preg_split.asp
+                                               // https://www.w3schools.com/php/php_ref_regex.asp
+                $correo = $aux[0];
+                $contrasena = $aux[1];
+                $form= $aux[2];
+                $examen= $aux[3];
+                $codigoE = $aux[4];
+                $nombre = $aux[5];
 
-        //         if ($correo === $_SESSION["correo"]) {
-        //             $linea = $correo." ".$contrasena." 1 ".$examen." ".$codigoE." ".$nombre."\n";
-        //             $_SESSION["form"] = 1;
-        //             fwrite($file2, $linea);
-        //             break;
-        //         }
-        //         else{
-        //             fwrite($file2, $linea);
-        //         }
-        //     }
-        // } 
+                if ($correo === $_SESSION["correo"]) {
+                    $linea = $correo." ".$contrasena." 1 ".$examen." ".$codigoE." ".$nombre."\n";
+                    $_SESSION["form"] = 1;
+                    fwrite($file2, $linea);
+                    break;
+                }
+                else{
+                    fwrite($file2, $linea);
+                }
+            }
+        } 
 
-        // fclose($file);
-        // fclose($file2);
+        fclose($file);
+        fclose($file2);
 
-        // unlink("../../data/archivo.txt");
-        // rename("../../data/archivo2.txt","../../data/archivo.txt");
+        unlink("data/archivo.txt");
+        rename("data/archivo2.txt","data/archivo.txt");
         
     }
 
@@ -140,7 +140,7 @@ El solicitante proporciono la siguiente informacion: Numero de telefono: $cel_nu
 
 A continuacion se le proporcionara su clave de acceso para realizar el examen de conocimientos, le deseamos lo mejor en todo el proceso de seleccion.
         
-clave:";
+clave: $codigoE";
 
 
         $pdf = new PDF();
@@ -157,10 +157,11 @@ clave:";
         $pdf->MultiCell(0, 10, $text2);
         
         $pdf->Output('Solicitud.pdf', 'D');
+        echo '<script>window.history.back();</script>';
     }else{
 ?>
 <head> 
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="css/form.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -258,7 +259,7 @@ clave:";
             ?>
         
         <div class="buttons">
-            <a href="../../elim.php">Regresar</a>
+            <a href="elim.php">Regresar</a>
             <input  type="submit" name="submit" value="Enviar">  
         </div>
 

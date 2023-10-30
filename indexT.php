@@ -18,11 +18,19 @@ session_start();
                 <li><a href="#">Contact</a></li>
                 <?php
                     if(isset($_SESSION["correo"])){
-                        echo '<li><a href="php/Vacantes.php">Vacantes</a></li>';
+                        echo '<li><a href="Vacantes.php">Vacantes</a></li>';
                     }
                 ?>
             </ul>
         </nav>
+        <?php
+            if(isset($_SESSION["correo"])){
+                echo '<a href="php/logout.php"><button class="cta" style="background-color: #f18067;padding: 15px;border-radius: 5px;">Logout</button></a>';
+        ?>
+          
+        <?php
+            }else{
+        ?>
         <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="custom-button btn dropdown-toggle">Login <span class="caret"></span></button>
         <ul class="dropdown-menu dropdown-menu-right mt-2">
             <li class="px-3 py-2">
@@ -43,6 +51,10 @@ session_start();
                 </form>
             </li>
         </ul>
+
+        <?php
+            }
+        ?>
 
 </header>
 <div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
