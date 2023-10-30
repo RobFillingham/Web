@@ -26,7 +26,11 @@
         </div>
     </div>
     <div class="grupo-2">
-        <small>&copy; 2023 <b>tekket</b> - Todos los Derechos Reservados</small>
+        <?php
+            include 'php/config.php';
+        ?>
+
+        <small>&copy; 2023 <b>tekket</b> - Todos los Derechos Reservados - Última actualización <?php echo date("d/m/Y", $lastUpdate); ?></small>
     </div>
 </footer>
 
