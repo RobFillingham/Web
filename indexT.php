@@ -18,11 +18,19 @@ session_start();
                 <li><a href="#">Contact</a></li>
                 <?php
                     if(isset($_SESSION["correo"])){
-                        echo '<li><a href="php/Vacantes.php">Vacantes</a></li>';
+                        echo '<li><a href="Vacantes.php">Vacantes</a></li>';
                     }
                 ?>
             </ul>
         </nav>
+        <?php
+            if(isset($_SESSION["correo"])){
+                echo '<a href="php/logout.php"><button class="cta" style="background-color: #f18067;padding: 15px;border-radius: 5px;">Logout</button></a>';
+        ?>
+          
+        <?php
+            }else{
+        ?>
         <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="custom-button btn dropdown-toggle">Login <span class="caret"></span></button>
         <ul class="dropdown-menu dropdown-menu-right mt-2">
             <li class="px-3 py-2">
@@ -43,6 +51,10 @@ session_start();
                 </form>
             </li>
         </ul>
+
+        <?php
+            }
+        ?>
 
 </header>
 <div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -80,8 +92,14 @@ session_start();
     const btn = document.querySelector('#dropdownMenu1');
     const div = document.querySelector('#padd');
 
-    if (window.scrollY > 220) {
-        div.style.height = '120px';
+    if (window.scrollY > 300) {
+        navbar.style.position = 'fixed';
+        div.style.display = "block";
+        
+            //navbar.style.top = '-140px';
+            //navbar.style.top = '0';
+
+
         navbar.style.backgroundColor = '#231b31'; // Cambia el color de fondo al hacer scroll
         navbar.style.color = '#fffafa'; // Cambia el color del texto al hacer scroll
         logo.src = 'MEDIA/logoCompleto.png';
@@ -97,7 +115,7 @@ session_start();
         btn.addEventListener('mouseleave', function() {
             btn.style.backgroundColor = '#dddddd'; // Cambia el color de fondo al salir de :hover
             btn.style.color = '#231b31'; // Cambia el color de texto al salir de :hover
-        });
+        });/*
         if(window.scrollY > 400){
             navbar.style.opacity = '1';
             navbar.style.top = '0';
@@ -105,10 +123,10 @@ session_start();
             navbar.style.opacity = '0';
             navbar.style.position = 'fixed';
             navbar.style.top = '-140px';
-        }
+        }*/
         
     } else {
-        div.style.height = '0px';
+        //div.style.height = '0px';
         navbar.style.backgroundColor = ' #e36124'; // Restaura el color de fondo original
         navbar.style.color = '#fffafa'; // Restaura el color de texto original
         logo.src = 'MEDIA/logoCompletoMORADO.png';
@@ -126,9 +144,18 @@ session_start();
             btn.style.color = '#FF5733'; // Cambia el color de texto al salir de :hover
         });
         navbar.style.position = 'relative';
-        navbar.style.top = '0';
-        navbar.style.opacity = '1';
+        div.style.display = "none";
+        /*navbar.style.top = '0';
+        navbar.style.opacity = '1';*/
         
     }
+    /*if (window.scrollY > 300) {
+        // Cuando el desplazamiento sea mayor que 220px
+        navbar.classList.add('fixed'); // Añade una clase CSS para hacerlo fijo
+    } else {
+        // Cuando el desplazamiento sea 220px o menos
+        navbar.classList.remove('fixed'); // Elimina la clase CSS para volver a la posición relativa
+    }*/
 });
+
 </script>

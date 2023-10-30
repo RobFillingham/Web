@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#contenedor-1{
+    width: 100%;
+}
+#contenedor-2{
+    width: 100%;
+}
+#contactText{
+    width: 40%;
+    padding: 10% 5% 10% 10%;
+}
+#contactForm{
+    width: 60%;
+    padding: 10% 5% 10% 5%;
+}
+#contactText > *{
+    padding-bottom: 5%;
+}
+button{
+    width: 180px;
+    height: 40px;
+}
+button img{
+    padding-right: 5%;
+    padding-bottom: 1.5%;
+    width: 37px;
+}
+
+
+@media (max-width: 599px) {
+    #contenedor-1 {
+      flex-direction: column;
+    }
+  }
+
+
+
+  .custom-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    border: 1px solid #007bff; /* Borde del botón */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón por encima */
+    transition: background-color 0.2s, color 0.2s; /* Transición suave */
+  }
+  
+  .custom-button img {
+    width: 20px; /* Ancho de la imagen (ajusta según tus necesidades) */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+  }
+  
+  .custom-button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón por encima */
+  }
+  
+  .custom-button span {
+    font-size: 16px; /* Tamaño del texto */
+  }
+  
