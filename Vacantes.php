@@ -107,7 +107,7 @@
                     if($_SESSION["form"] != 1){
                         echo '<a class="link" href="form.php"><button class="button-87" role="button">Formulario</button></a>';
                     }else if($_SESSION["examen"] == -1){
-                        echo '<a class="link" href="examen.php"><button class="button-87" role="button">Examen</button></a>';
+                        echo '<a class="link" href="php/verificarCodigoE.php"><button class="button-87" role="button">Examen</button></a>';
                     }else if($_SESSION["examen"]>=7){
                         ?>
                         <div class="calificacion">

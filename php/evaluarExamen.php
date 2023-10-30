@@ -59,6 +59,7 @@
     }
     else{
         //MENSAJE DE REPROBADO
+        header("Location: ../indexA.php");
     }
 
 
