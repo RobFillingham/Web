@@ -43,7 +43,7 @@
         
     </div>
     <div class="qs">
-        <form method="post" action="evaluarExamen.php">
+        <form method="post" action="php/evaluarExamen.php">
         <?php
             //Arreglos para almacenar las preguntas y respuestas
             $preguntaYRespuestasArray = array();
@@ -98,12 +98,12 @@
                 echo "<br>";
             }
         ?>
-        
-
-        </form>
         <div class="but">
             <input class="button-36" role="button" type="submit" value="Enviar">
         </div>
+
+        </form>
+        
     </div>
     
         

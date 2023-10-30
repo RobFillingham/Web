@@ -57,7 +57,7 @@
             <h1>Nuestras Localizaciones</h1>
         </div>
         <div class="text2" >
-            <h3>Miembros de Tekket trabajan desde Chicago, Miami, San Francisco, Nueva York, Bogotá, Washington, D.C., y muchos otros lugares alrededor del mundo.</h3>
+            <h6>Miembros de Tekket trabajan desde Chicago, Miami, San Francisco, Nueva York, Bogotá, Washington, D.C., y muchos otros lugares alrededor del mundo.</h6>
         </div>
         <div class="icons">
             <i class="fa-solid fa-earth-americas"></i>
