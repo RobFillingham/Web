@@ -22,15 +22,18 @@
     margin-bottom: 40px;
 }
 
-
+.link{
+    text-decoration: none;
+}
 
 .text2{
     width: 50%;
     margin-bottom: 100px;
 }
 
-.text2 h3{
+.text2 h6{
     text-align: center;
+    font-size: 10px;
 }
 
 .icons{

@@ -8,5 +8,5 @@ session_start();
 session_destroy();
 
 # Finalmente lo redireccionamos al formulario
-header("Location: ../elim.php");
+header("Location: ../indexA.php");
 ?>
