@@ -3,7 +3,7 @@
 
 <?php
  
-require 'formulario.php';
+
 
 ?>
 <div style="margin:100px;">
