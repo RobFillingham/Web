@@ -23,6 +23,10 @@
     include("indexT.php");
     ?>
     <!-- Julios div-->
+    <div class="divJ" >
+    <p>Donde los sueños profesionales<br> se hacen realidad,  unete al<br> equipo <span style="color:white">teKKet</span> !</p>
+           <img src="./MEDIA/vacantes.png" alt=""> 
+    </div>
     <!-- CURVE -->
     <svg id="visual" viewBox="20 0 1000 450" width="110%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
         <rect x="0" y="0" width="1000" height="450" fill="#e36124"></rect>

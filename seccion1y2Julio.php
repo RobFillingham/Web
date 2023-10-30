@@ -19,12 +19,9 @@ session_start();
     <link href="./css/stylePaginaInicial.css" rel="stylesheet">
 </head>
 
-
-
 <body>
     
-
-
+    <!-- /HEADER -->
     
 <!-- Seccion 1 y 2 J -->
     <section class="orange">
@@ -257,8 +254,8 @@ session_start();
    </div>
 
    <!-- HEADER -->
-<div class="all" >
-    <header id="navbar" >
+   <div class="all">
+    <header id="navbar">
         <img class="logo" src="MEDIA/logoCompletoMORADO.png" alt="logo" width="135px" height="30px">
         <nav>
             <ul class="nav_links">
@@ -332,7 +329,7 @@ session_start();
 </div>
 <div id="padd"></div>
         </div>
-    <!-- /HEADER -->
+
    <!-- Footer -->
    
 
