@@ -61,7 +61,7 @@ $config['base_url'] = 'http://' . $_SERVER["SERVER_NAME"]; //nombre del servidor
 
         # Luego redireccionamos a la pagina "Secreta"
         # redireccionamiento con php
-        header("Location: ../indexA.php");
+        header("Location: ../index.php");
         //header("Location:".$base_url."secreta.php");
 
         # redireccionamiento con javascript   

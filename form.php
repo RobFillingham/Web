@@ -259,7 +259,7 @@ clave: $codigoE";
             ?>
         
         <div class="buttons">
-            <a href="indexA.php">Regresar</a>
+            <a href="index.php">Regresar</a>
             <input  type="submit" name="submit" value="Enviar">  
         </div>
 
