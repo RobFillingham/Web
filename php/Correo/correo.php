@@ -36,50 +36,43 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'Aplicacion de empleo a Tekket';
-    $mail->Body    = 'Estimado [Nombre del Candidato],
+    $name=$_SESSION["nombre"];
+    if($_SESSION["examen"]>=7){
+        $mail->Body = '<p>Hola  $name damos la cordial bienvnida al equipo de TEKKET!!<br>
+        Estamos emocionados de tenerte como parte de nuestra comunidad de usuarios y clientes. En TEKKET, 
+        nos esforzamos por ofrecer soluciones de software de alta calidad y brindar un excelente servicio a nuestros clientes.<br><br>
+        
+        Fuiste seleccionado por cumplir y rebasar con todas nuestras pruebas en el proceso de seleccion rápido.<br>
+        Debes de mandar los siguientes documentos a este correo de manera inmediata.
+        -Acta de nacieminto. <br>
+        -CURP. <br>
+        -Comprobante de domicilio. <br>
+        -Cuenta bancaria. <br>
+        -Titulo de universidad o comprobante de estudios. <br><br><br>
 
-    Es un placer darle la bienvenida al equipo de [Nombre de la Empresa]. Estamos emocionados de contar con usted como parte de nuestra organización y esperamos que su experiencia aquí sea enriquecedora y llena de oportunidades.
-    
-    Para facilitar su proceso de incorporación, a continuación, le proporcionamos información importante:
-    
-    Fecha de Ingreso: Su fecha de ingreso a [Nombre de la Empresa] está programada para el [Fecha de Ingreso]. Este es el día en el que comenzará su emocionante viaje con nosotros.
-    
-    Horario de Trabajo: Su horario laboral será de [Horario de Trabajo] de [Días Laborables], según lo acordado durante el proceso de selección. Estamos seguros de que se adaptará rápidamente a nuestro entorno de trabajo y se convertirá en una parte fundamental de nuestro equipo.
-    
-    Ubicación de la Empresa: [Dirección de la Empresa]. Asegúrese de conocer la ubicación de nuestra oficina y cómo llegar antes de su primer día.
-    
-    Documentación requerida: Le solicitamos que traiga los siguientes documentos en su primer día:
-    
-        [Lista de Documentos Requeridos]
-        [Otro documento, si es necesario]
-    
-    Información de Contacto: En caso de cualquier pregunta o inquietud antes de su fecha de ingreso, no dude en ponerse en contacto con [Nombre del Contacto], quien estará encantado de ayudarle.
-    
-    Orientación: Durante su primer día en la empresa, recibirá una orientación en la que se le presentará a su equipo, se le explicarán nuestras políticas y procesos internos, y se le proporcionará una visión general de nuestra cultura corporativa.
-    
-    Formación: A lo largo de su carrera en [Nombre de la Empresa], ofrecemos oportunidades de desarrollo continuo. A medida que avance en su puesto, tendrá acceso a programas de formación y capacitación que lo ayudarán a crecer y aportar un valor significativo a nuestra organización.
-    
-    Una vez más, le damos la bienvenida a [Nombre de la Empresa] y esperamos que esta sea una experiencia gratificante y exitosa para usted. ¡Estamos emocionados de que forme parte de nuestro equipo!
-    
-    Si tiene alguna pregunta o necesita información adicional antes de su primer día, no dude en comunicarse con nosotros.
-    
-    Le agradecemos por unirse a nosotros y esperamos verlo pronto.
-    
-    Atentamente,
-    
-    [Su Nombre]
-    [Tu Título]
-    [Nombre de la Empresa]
-    [Tu Número de Contacto]
-    [Tu Correo Electrónico';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+        Empezarás tus servicios desde el día de mañana con horario de lunes a viernes de 9:00 A.M. a 4:00 P.M. <br>
+        Muchas gracias por querer ser parte de la familia TEKKET un cordial saludo. <br><br><br>
+        
+        Atentamente, Robert Everett Fillingham Gaeta, CEO de TEKKET</p>';
+    }else{
+        $mail->Body = '<p>Estimado/a $name <br>
+        Espero que te encuentres bien. Agradecemos tu interés en TEKKET y la oportunidad que nos diste para revisar tu solicitud de empleo.<br>
+        Después de una revisión cuidadosa, lamentamos informarte que no hemos podido avanzar con tu solicitud en esta ocasión. 
+        Por favor, ten en cuenta que esta decisión no refleja necesariamente tu valía o tus habilidades, sino que se basa en las necesidades y circunstancias actuales de nuestra organización.
+        Si tienes alguna pregunta o deseas obtener más información sobre la decisión, no dudes en ponerte en contacto con nosotros. 
+        Estamos aquí para ayudarte y proporcionar cualquier retroalimentación constructiva que podamos.
+        Te deseamos éxito en tus futuros esfuerzos y te agradecemos  por considerar a TEKKET.<br><br><br>
+        
+        Atentamente, Robert Everett Fillingham Gaeta, CEO de TEKKET
+        </p>';
+    }
+    $mail->Body .= '<img src="../../img/firma.png" alt="Firma CEO Robert Fillingham">';
 
     $mail->send();
-    echo 'Message has been sent';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 
-header("Location: ../elim.php")
+header("Location: ../../elim.php")
 
 ?>

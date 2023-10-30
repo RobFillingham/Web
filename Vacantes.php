@@ -79,7 +79,7 @@
                 <!-- HTML !-->
                 <?php
                     if($_SESSION["form"] != 1){
-                        echo '<a href="php/Form/form.php"><button class="button-87" role="button">Formulario</button></a>';
+                        echo '<a href="form.php"><button class="button-87" role="button">Formulario</button></a>';
                     }else if($_SESSION["examen"] == -1){
                         echo '<a href="examen.php"><button class="button-87" role="button">Examen</button></a>';
                     }else{
