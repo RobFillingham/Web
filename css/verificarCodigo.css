@@ -117,7 +117,12 @@ body {
     text-align: center;
     width: 100%;
   }
+
+  .link{
+    text-decoration: none;
+    color: white;
+  }
   
   .submit:active {
-    background-color: #06b;
+    background-color: rgb(255, 49, 3);
   }
