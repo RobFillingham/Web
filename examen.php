@@ -18,9 +18,8 @@
         <div class="bienvenido">
             <?php
                 
-                //echo "<h1 style='font-family: 'Outfit', sans-serif;'>Bienvendo a tu Examen ".$_SESSION["nombre"]."!</h1>";
+                echo "<h1 style='font-family: 'Outfit', sans-serif;'>Bienvendo a tu Examen ".$_SESSION["nombre"]."!</h1>";
             ?>
-            <h1 style="font-family: 'Outfit', sans-serif;">Bienvendo a tu Examen!</h1>
         </div>
         
         <div class="indicaciones">
