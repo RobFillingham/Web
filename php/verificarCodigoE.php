@@ -25,7 +25,7 @@
                     <label for="firstname" class="placeholder">Código</label>
                 </div>
                 <input class="submit" type="submit" name="submit" value="Código Incorrecto"> 
-                <button class="submit"><a class="link" href="../elim.php">Regresar</a></button>
+                <button class="submit"><a class="link" href="../Vacantes.php">Regresar</a></button>
             </form>
             <?php
         }
