@@ -5,7 +5,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-
+session_start();
 
 //Load Composer's autoloader
 require 'vendor/autoload.php';
@@ -38,11 +38,11 @@ try {
     $mail->Subject = 'Aplicacion de empleo a Tekket';
     $name=$_SESSION["nombre"];
     if($_SESSION["examen"]>=7){
-        $mail->Body = '<p>Hola  $name damos la cordial bienvnida al equipo de TEKKET!!<br>
+        $mail->Body = '<p>Hola  '.$_SESSION["name"].' damos la cordial bienvnida al equipo de TEKKET!!<br>
         Estamos emocionados de tenerte como parte de nuestra comunidad de usuarios y clientes. En TEKKET, 
         nos esforzamos por ofrecer soluciones de software de alta calidad y brindar un excelente servicio a nuestros clientes.<br><br>
         
-        Fuiste seleccionado por cumplir y rebasar con todas nuestras pruebas en el proceso de seleccion rápido.<br>
+        Fuiste seleccionado por cumplir y rebasar con todas nuestras pruebas en el proceso de seleccion rapido.<br>
         Debes de mandar los siguientes documentos a este correo de manera inmediata.
         -Acta de nacieminto. <br>
         -CURP. <br>
@@ -50,17 +50,17 @@ try {
         -Cuenta bancaria. <br>
         -Titulo de universidad o comprobante de estudios. <br><br><br>
 
-        Empezarás tus servicios desde el día de mañana con horario de lunes a viernes de 9:00 A.M. a 4:00 P.M. <br>
+        Empezaras tus servicios desde el dia de mañana con horario de lunes a viernes de 9:00 A.M. a 4:00 P.M. <br>
         Muchas gracias por querer ser parte de la familia TEKKET un cordial saludo. <br><br><br>
         
         Atentamente, Robert Everett Fillingham Gaeta, CEO de TEKKET</p>';
     }else{
         $mail->Body = '<p>Estimado/a $name <br>
-        Espero que te encuentres bien. Agradecemos tu interés en TEKKET y la oportunidad que nos diste para revisar tu solicitud de empleo.<br>
-        Después de una revisión cuidadosa, lamentamos informarte que no hemos podido avanzar con tu solicitud en esta ocasión. 
-        Por favor, ten en cuenta que esta decisión no refleja necesariamente tu valía o tus habilidades, sino que se basa en las necesidades y circunstancias actuales de nuestra organización.
-        Si tienes alguna pregunta o deseas obtener más información sobre la decisión, no dudes en ponerte en contacto con nosotros. 
-        Estamos aquí para ayudarte y proporcionar cualquier retroalimentación constructiva que podamos.
+        Espero que te encuentres bien. Agradecemos tu interes en TEKKET y la oportunidad que nos diste para revisar tu solicitud de empleo.<br>
+        Despues de una revisión cuidadosa, lamentamos informarte que no hemos podido avanzar con tu solicitud en esta ocasion. 
+        Por favor, ten en cuenta que esta decision no refleja necesariamente tu valia o tus habilidades, sino que se basa en las necesidades y circunstancias actuales de nuestra organización.
+        Si tienes alguna pregunta o deseas obtener mas informacion sobre la decision, no dudes en ponerte en contacto con nosotros. 
+        Estamos aqui para ayudarte y proporcionar cualquier retroalimentacion constructiva que podamos.
         Te deseamos éxito en tus futuros esfuerzos y te agradecemos  por considerar a TEKKET.<br><br><br>
         
         Atentamente, Robert Everett Fillingham Gaeta, CEO de TEKKET

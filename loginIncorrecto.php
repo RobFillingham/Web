@@ -7,16 +7,23 @@
 
     <style>
         body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
             background-color: #e36124;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: #231b31;
         }
 
         .square{
-            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             padding: 250px;
-            margin: 80px;
-            width: 800px; 
+            
+             
             height: 100px; 
             background-color: white; 
             border-radius: 15px; 
@@ -26,14 +33,10 @@
 
         
 
-        .messg{
-            margin-top: -150px;
-            margin-left: 280px;
-        }
+        
 
         .messg img{
-            position:relative;
-            right: 50px;
+            
             width:50%;
         }
 
@@ -51,9 +54,7 @@
         color: #FFFFFF; 
         }
         
-        .messg h1{
-            margin-left: -120px;
-        }
+        
 
     </style>
 </head>
@@ -61,9 +62,9 @@
     <div class="square">
         <div class="messg">
         <h2>Lo sentimos..</h2>
-        <img src="./MEDIA/bailey.png" alt="">
+        <img src="../MEDIA/bailey.png" alt="">
         <h1 >Correo o contraseña incorrectos</h1>
-        <a href="index.php">Intentar de nuevo</a>
+        <a href="../index.php">Intentar de nuevo</a>
         </div>
     </div>
 </body>
