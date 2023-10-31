@@ -72,12 +72,7 @@ $config['base_url'] = 'http://' . $_SERVER["SERVER_NAME"]; //nombre del servidor
         # mensaje diciendo que es incorrecto
          
         
-        echo '<div  style="width:50%; margin:100px;" class="alert alert-warning alert-dismissible fade show" role="alert">';
-            echo "<p style='text-align:center;'>El usuario o la contrasena son incorrectos</p>";
-            echo '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
-            echo    '<span aria-hidden="true">&times;</span>';
-            echo '</button>';
-        echo "</div>";
+        include("../loginIncorrecto.php");
         
 
     }
