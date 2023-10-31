@@ -100,7 +100,7 @@
         <div class="row">
             <div class="col-md-6 d-md-flex flex-md-column-reverse">
                 <p id="jc">
-               Julio Cesar es nuestro dedicado Regional Manager, con una amplia experiencia en gestión y liderazgo. Como líder de nuestra expansión regional, Julio demuestra un compromiso inquebrantable con el crecimiento
+               Julio Cesar es nuestro dedicado Assistan TO THE Regional Manager, con una amplia experiencia en gestión y liderazgo. Como líder de nuestra expansión regional, Julio demuestra un compromiso inquebrantable con el crecimiento
                  y el éxito de nuestra empresa en múltiples ubicaciones geográficas. Su capacidad para establecer relaciones sólidas con los clientes y liderar equipos ha sido fundamental para nuestro continuo progreso.
                  Julio se destaca por su enfoque estratégico y su habilidad para mantener altos estándares de eficiencia operativa y satisfacción del cliente en todas las regiones que supervisa. 
                 </p>
