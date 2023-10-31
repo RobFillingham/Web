@@ -12,7 +12,7 @@
 <div style="margin:100px;">
 <?php
     function generarPassword($longitud) {
-        $caracteres = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $caracteres = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJK*!@#$%&/LMNOPQRSTUVWXYZ';
         $password = '';
     
         for ($i = 0; $i < $longitud; $i++) {
